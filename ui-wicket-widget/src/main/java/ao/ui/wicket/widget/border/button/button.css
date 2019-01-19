@@ -1,0 +1,33 @@
+/*
+ * Modified from:
+ * http://www.jankoatwarpspeed.com/post/2008/04/30/
+ *   make-fancy-buttons-using-css-sliding-doors-technique.aspx
+ */
+
+/* -------------------------------------------------------------------- */
+.button-outer {
+    /* Sliding right image */
+    background: transparent url(button-right.png) no-repeat scroll top right;
+    display: block;
+    float: left;
+    height: 34px; /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+    margin-right: 6px;
+    padding-right: 20px; /* CHANGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+    /* FONT PROPERTIES */
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.button-outer span.button-inner {    /* Background left image */
+    background: transparent url(button-left.png) no-repeat;     display: block;
+    line-height: 22px; /* CHANGE THIS VALUE ACCORDING TO BUTTON HEIGHT */
+    padding: 7px 0 5px 18px;
+}
+
+.button-outer:hover span.button-inner {
+    text-decoration:underline;
+    cursor:pointer;
+}

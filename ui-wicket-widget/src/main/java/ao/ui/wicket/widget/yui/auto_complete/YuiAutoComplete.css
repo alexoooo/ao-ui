@@ -1,0 +1,29 @@
+
+/* custom styles for inline instances */
+.ac-input {
+    /*position:static;*/
+    /*vertical-align:middle;*/
+    margin-top:-10px;
+}
+.ac-container {
+    margin-top:-15px;
+}
+
+.yui-ac .yui-button {
+    /*vertical-align:bottom;*/
+    /*height: 20px;*/
+}
+.yui-ac .yui-button button {
+    background: url(ac-arrow-rt.png)
+        center center no-repeat;
+    /*vertical-align:bottom;*/
+    height: 21px;
+    /*margin-top:-5px;*/
+}
+.yui-ac .toggle-open .yui-button button {
+    background: url(ac-arrow-dn.png)
+        center center no-repeat;
+    /*vertical-align:top;*/
+    height: 21px;
+    /*margin-top:-5px;*/
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+      xml:lang="en" lang="en">
+<body>
+<wicket:panel>
+
+    <form wicket:id="form">
+        <fieldset>
+            <div>
+                <!--<label wicket:id="writeLabel">-->
+                    <!--Write Field-->
+                    <!--&lt;!&ndash;<wicket:message key="write">[Label?]</wicket:message>&ndash;&gt;-->
+                <!--</label>-->
+                <input wicket:id="write"/>
+                <div wicket:id="write-error">
+                    [Error Message]
+                </div>
+            </div>
+
+            <!--<div>-->
+                <!--Line Field: <span wicket:id="line">[Line Field]</span>-->
+            <!--</div>-->
+
+            <!--<div>-->
+                <!--Area Field: <span wicket:id="area">[Area Field]</span>-->
+            <!--</div>-->
+        </fieldset>
+
+        <fieldset class="submit">
+            <input type="submit" value="go"/>
+        </fieldset>
+    </form>
+
+</wicket:panel>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <!--====================================================================-->
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <!--====================================================================-->
+    <parent>
+        <artifactId>ui-wicket</artifactId>
+        <groupId>ao.ui.wicket</groupId>
+        <version>2.4.1-SNAPSHOT</version>
+    </parent>
+
+    <!--====================================================================-->
+    <artifactId>ui-wicket-auth</artifactId>
+
+
+    <!--====================================================================-->
+    <name>UI : Wicket : Auth</name>
+
+
+    <!--====================================================================-->
+    <dependencies>
+
+        <!-- Sibling Dependencies -->
+        <dependency>
+            <groupId>ao.ui.wicket</groupId>
+            <artifactId>ui-wicket-common</artifactId>
+        </dependency>
+
+
+        <!--  AUTH DEPENDENCIES -->
+        <!--
+              <dependency> <groupId>org.apache.wicket.wicket-security</groupId>
+              <artifactId>swarm</artifactId> <version>1.4-SNAPSHOT</version>
+              </dependency>
+          -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-auth-roles</artifactId>
+            <version>${wicket.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-spring</artifactId>
+            <version>${wicket.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>2.0.4</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-aop</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-support</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+</project>

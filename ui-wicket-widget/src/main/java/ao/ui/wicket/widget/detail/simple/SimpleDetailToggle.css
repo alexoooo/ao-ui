@@ -1,0 +1,18 @@
+
+/* -------------------------------------------------------------------- */
+.opened_toggle
+{
+    background: url(opened.gif) no-repeat center left;
+    padding-left: 12px;
+}
+
+.closed_toggle
+{
+    background: url(closed.gif) no-repeat center left;
+    padding-left: 12px;
+}
+
+.body_toggle
+{
+	margin-left: 12px;
+}

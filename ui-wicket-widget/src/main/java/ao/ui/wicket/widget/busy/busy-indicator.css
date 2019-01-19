@@ -1,0 +1,22 @@
+#busy_indicator {
+    display: none;
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    overflow: hidden; /*Disable scroll-bars. Set to "scroll" to enable*/
+
+    background: black;
+    color: white;
+    
+    z-index: 1000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    
+    background-image: url(busy-bar.gif);
+    background-position:center;
+    background-repeat:no-repeat;
+}

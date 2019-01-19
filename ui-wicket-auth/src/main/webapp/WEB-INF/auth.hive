@@ -1,0 +1,6 @@
+
+grant
+{
+    permission ${ComponentPermission} "ao.ui.wicket.auth.sample.home.UiAuthIndex", "inherit, render";
+    permission ${ComponentPermission} "ao.ui.wicket.auth.sample.home.UiAuthIndex", "enable";
+};

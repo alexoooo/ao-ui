@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+      xml:lang="en" lang="en">
+<body>
+<wicket:panel>
+
+    <table>
+        <tr><td>
+            <input type="text" wicket:id="date-select"/>
+        </td><td>
+            <input type="text" wicket:id="time-select"/>
+        </td></tr>
+        <tr style="font-size:small;color:gray;"><td>
+            mm/dd/yyyy
+        </td><td>
+            [hh[:mm[:ss]]]
+        </td></tr>
+        <tr style="font-weight:bold;color:red;">
+            <td wicket:id="feedback-wrap" colspan="2">
+                <span wicket:id="feedback">
+                    [ERROR MESSAGES]
+                </span>
+            </td>
+        </tr>
+    </table>
+    
+</wicket:panel>
+</body>
+</html>
+
